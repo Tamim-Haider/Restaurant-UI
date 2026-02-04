@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant list</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            background: url("bg.jpeg");
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #ddd;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Which Restaurant do you prefer?</h2>
+        <ul id="restaurant-list">
+            <li>McDonald's</li>
+            <li>KFC</li>
+            <li>Pizza Hut</li>
+            <li>Tasty Treat</li>
+            <li>Sultan's Dine</li>
+            <li>Kacchi Dine</li>
+            <li>Kacchi Bhai</li>
+            <li>Te Amo</li>
+            <li>Mithai</li>
+            <li>Star Kabab & Restaurant</li>
+            <li>Spice & Rice</li>
+            <li>PizzaBurg</li>
+            <li>Ghoroa Restaurant</li>
+            <li>Food King</li>
+        </ul>
+        
+    </div>
+    
+    <script>
+        function addRestaurant() {
+            let input = document.getElementById("restaurant-input");
+            let name = input.value.trim();
+            if (name !== "") {
+                let li = document.createElement("li");
+                li.textContent = name;
+                document.getElementById("restaurant-list").appendChild(li);
+                input.value = "";
+            }
+        }
+    </script>
+</body>
+</html>

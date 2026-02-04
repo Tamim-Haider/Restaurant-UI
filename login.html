@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url("bg.jpeg");
+        }
+        .login-container {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent black watercolor effect */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #fff; /* Change text color to white */
+        }
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .login-container button {
+            width: 95%;
+            background: #ff6a00;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            
+        }
+        .login-container button:hover {
+            background: #e65c00;
+        }
+        .login-container p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .login-container a {
+            color: #ff6a00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button onclick="window.location.href='Restraunt list.html'">Login</button>
+        <p style="color: rgb(255, 255, 255);">Don't have an account? <a href="sign_up.html">Sign Up</a></p>
+    </div>
+</body>
+</html>
